@@ -53,7 +53,7 @@ const Search = () => {
       setLoading(true);
       setShowMore(false);
       const searchQuery = urlParams.toString();
-      const res = await fetch(`http://localhost:8000/api/listing/getAllListings?${searchQuery}`);
+      const res = await fetch(`https://keystate.onrender.com/api/listing/getAllListings?${searchQuery}`);
       const data = await res.json();
       if (!res.ok) {
         setLoading(false);
@@ -125,7 +125,7 @@ const Search = () => {
     const urlParams = new URLSearchParams(location.search);
     urlParams.set('startIndex', startIndex);
     const searchQuery = urlParams.toString();
-    const res = await fetch(`http://localhost:8000/api/listing/getAllListings?${searchQuery}`);
+    const res = await fetch(`https://keystate.onrender.com/api/listing/getAllListings?${searchQuery}`);
     const data = await res.json();
     if (data.length < 8) {
       setShowMore(false);

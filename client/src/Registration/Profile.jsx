@@ -58,7 +58,7 @@ const Profile = () => {
     try {
       dispatch(updateUserStart());
       const token = localStorage.getItem('user:token');
-      const res = await fetch(`http://localhost:8000/update/${currentUser._id}`, {
+      const res = await fetch(`https://keystate.onrender.com/update/${currentUser._id}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ const Profile = () => {
     try {
       dispatch(deleteUserStart());
       const token = localStorage.getItem('user:token'); // Get the authentication token from localStorage or wherever it's stored
-      const res = await fetch(`http://localhost:8000/delete/${currentUser._id}`, {
+      const res = await fetch(`https://keystate.onrender.com/delete/${currentUser._id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`, // Include the authentication token in the request headers
@@ -113,7 +113,7 @@ const Profile = () => {
   const handleSignOut = async () => {
     try {
       dispatch(signOutUserStart());
-      const res = await fetch('http://localhost:8000/signout');
+      const res = await fetch('https://keystate.onrender.com/signout');
       const data = await res.json();
       if (!res.ok) {
         dispatch(deleteUserFailure(data.message));
@@ -130,7 +130,7 @@ const Profile = () => {
     try {
       setShowListingsError(false);
       const token = localStorage.getItem('user:token');
-      const res = await fetch(`http://localhost:8000/listings/${currentUser._id}`, {
+      const res = await fetch(`https://keystate.onrender.com/listings/${currentUser._id}`, {
         headers: {
           'Authorization': `Bearer ${token}`, // Include the authentication token in the request headers
         },
@@ -149,7 +149,7 @@ const Profile = () => {
   const handleListingDelete = async (listingId) => {
     try {
       const token = localStorage.getItem('user:token');
-      const res = await fetch(`http://localhost:8000/api/listing/deleteListing/${listingId}`, {
+      const res = await fetch(`https://keystate.onrender.com/api/listing/deleteListing/${listingId}`, {
         method: 'DELETE', 
         headers: {
           'Authorization': `Bearer ${token}`, // Include the authentication token in the request headers
