@@ -5,7 +5,7 @@ const { hashPassword, comparePassword} = require('../helpers/auth');
 const validator = require('validator');
 const jwt = require('jsonwebtoken');
 const { access } = require('fs');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const Listing = require('../models/listing.model');
 const { response } = require('express');
 
