@@ -22,12 +22,11 @@ app.use('/', require('./routes/authRoutes')); // authentication routes
 app.use('/api/listing', require('./routes/listingRoutes')); //listing routes
 
 
-app.use(express.static(path.join(__dirname, '../client')));
-
-// Handle SPA routing (redirect all paths to index.html)
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/public/index.html'));
+app.use(express.static(path.join(__dirname, "../client/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html" ));
 });
+
 //running the server on port 8000
 const port = 8000;
 app.listen(port, () => console.log(`Server is running on port ${port}`));
