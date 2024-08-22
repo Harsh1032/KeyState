@@ -8,7 +8,7 @@ const cors = require('cors');
 router.use(
     cors({
         credentials: true,
-        origin: 'https://keystate.onrender.com'
+        origin: 'poetic-profiterole-0d157a.netlify.app'
     })
 )
 
