@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, '../client')));
 
 // Handle SPA routing (redirect all paths to index.html)
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/index.html'));
+  res.sendFile(path.join(__dirname, '../client/public/index.html'));
 });
 //running the server on port 8000
 const port = 8000;
