@@ -34,7 +34,7 @@ const UpdateListing = () => {
       useEffect(() => {
         const fetchListing = async () => {
             const listingId = params.listingId;
-            const res = await fetch(`https://keystate.onrender.com/api/listing/getListing/${listingId}`);
+            const res = await fetch(`https://keystate-1.onrender.com/api/listing/getListing/${listingId}`);
             const data = await res.json();
             if (!res.ok) {
                 console.log(data.message);
@@ -152,7 +152,7 @@ const UpdateListing = () => {
             setError(false);
             const token = localStorage.getItem('user:token');
 
-            const res = await fetch(`https://keystate.onrender.com/api/listing/updateListing/${params.listingId}`, {
+            const res = await fetch(`https://keystate-1.onrender.com/api/listing/updateListing/${params.listingId}`, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',

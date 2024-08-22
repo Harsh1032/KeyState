@@ -150,7 +150,7 @@ const CreateListing = () => {
 
             const token = localStorage.getItem('user:token');
 
-            const res = await fetch('https://keystate.onrender.com/api/listing/create', {
+            const res = await fetch('https://keystate-1.onrender.com/api/listing/create', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',

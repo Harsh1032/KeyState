@@ -32,7 +32,7 @@ const Listing = () => {
           try {
             setLoading(true);
             const listingId = params.listingId;
-            const res = await fetch(`https://keystate.onrender.com/api/listing/getListing/${listingId}`);
+            const res = await fetch(`https://keystate-1.onrender.com/api/listing/getListing/${listingId}`);
             const data = await res.json();
             if (!res.ok) {
               setError(true);

@@ -25,7 +25,7 @@ const SignUpAgent = ({handleSwitchSignupType, signupType}) => {
         // Handle form submission
         try {
             setLoading(true);
-            const res = await fetch('https://keystate.onrender.com/signUpAgent', {
+            const res = await fetch('https://keystate-1.onrender.com/signUpAgent', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

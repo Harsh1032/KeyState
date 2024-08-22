@@ -12,7 +12,7 @@ const Contact = ({listing}) => {
       const fetchLandlord = async () => {
         try {
           const token = localStorage.getItem('user:token');
-          const res = await fetch(`https://keystate.onrender.com/api/user/${listing.userRef}`, {
+          const res = await fetch(`https://keystate-1.onrender.com/api/user/${listing.userRef}`, {
             headers: {
               'Authorization': `Bearer ${token}`, // Include the authentication token in the request headers 
             }

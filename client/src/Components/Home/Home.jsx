@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     const fetchOfferListings = async () => {
       try {
-        const res = await fetch('https://keystate.onrender.com/api/listing/getAllListings?offer=true&limit=3');
+        const res = await fetch('https://keystate-1.onrender.com/api/listing/getAllListings?offer=true&limit=3');
         const data = await res.json();
         setOfferListings(data);
         fetchRentListings();
@@ -25,7 +25,7 @@ const Home = () => {
     };
     const fetchRentListings = async () => {
       try {
-        const res = await fetch('https://keystate.onrender.com/api/listing/getAllListings?type=rent&limit=3');
+        const res = await fetch('https://keystate-1.onrender.com/api/listing/getAllListings?type=rent&limit=3');
         const data = await res.json();
         setRentListings(data);
         fetchSaleListings();
@@ -36,7 +36,7 @@ const Home = () => {
 
     const fetchSaleListings = async () => {
       try {
-        const res = await fetch('https://keystate.onrender.com/api/listing/getAllListings?type=sale&limit=3');
+        const res = await fetch('https://keystate-1.onrender.com/api/listing/getAllListings?type=sale&limit=3');
         const data = await res.json();
         setSaleListings(data);
       } catch (error) {

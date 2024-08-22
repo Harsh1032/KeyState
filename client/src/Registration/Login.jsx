@@ -26,7 +26,7 @@ const Login = () => {
         // Handle form submission
         try {
             dispatch(LoginStart());
-            const res = await fetch('https://keystate.onrender.com/login', {
+            const res = await fetch('https://keystate-1.onrender.com/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
