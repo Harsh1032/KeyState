@@ -6,12 +6,12 @@ const {verifyToken} = require('../utils/verifyUser');
 
 //middleware
 
-router.use(
-    cors({
-        credentials: true,
-        origin: 'poetic-profiterole-0d157a.netlify.app'
-    })
-)
+// router.use(
+//     cors({
+//         credentials: true,
+//         origin: 'poetic-profiterole-0d157a.netlify.app'
+//     })
+// )
 
 
 //post routes

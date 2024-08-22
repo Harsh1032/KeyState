@@ -5,12 +5,12 @@ const router = express.Router();
 
 const cors = require('cors');
 //middleware
-router.use(
-    cors({
-        credentials: true,
-        origin: 'poetic-profiterole-0d157a.netlify.app'
-    })
-)
+// router.use(
+//     cors({
+//         credentials: true,
+//         origin: 'poetic-profiterole-0d157a.netlify.app'
+//     })
+// )
 
 //getting more than one properties
 router.get('/getAllListings', getListings);
