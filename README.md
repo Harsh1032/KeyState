@@ -2,7 +2,7 @@
 
 <p class="has-line-data" data-line-start="4" data-line-end="5"> https://poetic-profiterole-0d157a.netlify.app/</p>
 
-![Project Image](https://github.com/Harsh1032/KeyState/blob/main/client/public/keystate)
+![Project Image](https://github.com/Harsh1032/KeyState/blob/main/client/public/keystate.jpg)
 
 <h2 class="code-line" data-line-start=1 data-line-end=2 ><a id="_KeyState_the_place_to_find_your_new_home__1"></a><em>KeyState the place to find your new home</em></h2>
 <p class="has-line-data" data-line-start="4" data-line-end="5">MERN Stack, and Firebase based Rental platoform.</p>
